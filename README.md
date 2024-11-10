@@ -25,10 +25,11 @@ A call to typeof x returns a string with the type name:
         typeof alert // "function"  (3)
 
 <br>
+
 ## The conversion follows the rules:
 
         Value	              Becomes…
-        undefined	           NaN
+        undefined                  NaN
         null	                0
         true / false	      1 / 0
         string	              The string is read “as is”, whitespaces (includes spaces, tabs \t, newlines \n etc.) from both sides are ignored. An empty string becomes 0. An error gives NaN.
