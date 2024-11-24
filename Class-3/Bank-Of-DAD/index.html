@@ -11,31 +11,73 @@
 
 </head>
 
-<body class="w-[100%] h-[100vh] flex justify-center">
-    <div class="frm w-[45%] border-[red] border-[2px] flex flex-col items-center gap-y-[2%]">
-        <p class="text-center text-[26px] pt-[20%] pb-[5%]">Welcom to Bank of DAD PLC</p>
+<body class="w-[100%] h-[100vh] bg-[#000000] flex justify-center items-center">
 
-        <label class="input input-bordered flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
-                <path
-                    d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-                <path
-                    d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
-            </svg>
-            <input type="text" class="grow" placeholder="Email" value="myEmail" id="email" />
-        </label>
+    <div class="hero bg-base-200 min-h-screen  bg-[black]">
+        <div class="hero-content flex-col lg:flex-row-reverse gap-[6%] py-[5%] bg-[black] w-[50%] shadow-[0px_0px_20px_#704fff] p-[3%]">
+            <div class="text-center lg:text-left">
+                <h1 class="text-5xl font-bold text-[#704fff]">Login now!</h1>
+                <p class="py-6 text-[#d6d1f0] font-[500]">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                    quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+            </div>
 
-        <label class="input input-bordered flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
-                <path fill-rule="evenodd"
-                    d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
-                    clip-rule="evenodd" />
-            </svg>
-            <input type="password" class="grow" value="myPassword" id="pass" />
-        </label>
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Email</span>
+                        </label>
+                        <input type="email" placeholder="email" class="input input-bordered" value="" id="email" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Password</span>
+                        </label>
+                        <input type="password" placeholder="password" class="input input-bordered" value="" id="pass"
+                            required />
+                        <label class="label">
+                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                    </div>
+                    <div class="form-control mt-6">
+                        <button class="btn btn-primary" id="loginBtn">Login</button>
+                    </div>
+                </div>
+            </div>
 
-        <button class="btn btn-primary" id="loginBtn">Login</button>
+        </div>
     </div>
+
+
+
+
+
+
+    <!-- <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+        <div class="card-body">
+            <div class="form-control">
+                <label class="label">
+                    <span class="label-text">Email</span>
+                </label>
+                <input type="email" placeholder="email" class="input input-bordered" value="" id="email" required />
+            </div>
+            <div class="form-control">
+                <label class="label">
+                    <span class="label-text">Password</span>
+                </label>
+                <input type="password" placeholder="password" class="input input-bordered" value="" id="pass"
+                    required />
+                <label class="label">
+                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                </label>
+            </div>
+            <div class="form-control mt-6">
+                <button class="btn btn-primary" id="loginBtn">Login</button>
+            </div>
+        </div>
+    </div> -->
 
     <script src="login.js"></script>
 

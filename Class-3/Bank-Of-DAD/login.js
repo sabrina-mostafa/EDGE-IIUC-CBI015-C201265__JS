@@ -14,9 +14,9 @@ function verifyUser() {
     console.log(emailInput.value);
     console.log(passwordInput.value);
 
-    // show aler
+    // show alert
     if(emailValue=='secret@gmail.com' && passwordValue=='secret'){
-        alert("WOW! user is VALID");
+        // alert("WOW! user is VALID");
         
 // Step 3: Redirect to dashboard
         window.location.href = "dashboard.html";
